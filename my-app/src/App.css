@@ -1,0 +1,105 @@
+/* src/index.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #ece9e6, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  form {
+    background-color: #fff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+  
+  form:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  form div {
+    margin-bottom: 1.5rem;
+  }
+  
+  label {
+    display: block;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #0077ff;
+    box-shadow: 0 0 5px rgba(0, 119, 255, 0.3);
+    background-color: #fff;
+  }
+  
+  button {
+    background-color: #0077ff;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: #005bb5;
+    transform: translateY(-2px);
+  }
+  
+  button:active {
+    background-color: #004999;
+  }
+  
+  span {
+    color: #d9534f;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-top: 0.25rem;
+  }
+  
+  @media (max-width: 500px) {
+    form {
+      padding: 2rem;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
